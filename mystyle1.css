@@ -1,0 +1,10 @@
+table,th,td{
+			border-collapse: collapse;
+			border:4px solid blue;
+			padding: 15px;
+			margin-left: 100px;
+		}
+		body{
+			background-color:orange;
+			background-image: url("C:\Users\Lalit\Pictures\2018-08-28 satguru.jpeg");
+		}

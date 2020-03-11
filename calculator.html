@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function calculator(id) {
+			var x=document.getElementById('num').value;
+			if (x=='') {
+				var a=0;
+			}
+			else
+				a=1;
+			if (a==0) {
+				document.getElementById('num').value=id;
+				a++;
+			}
+			else if(a>0)
+			{
+				document.getElementById('num').value=document.getElementById('num').value+id;
+			}
+			function result()
+			{
+
+                document.getElementById('').value=result;
+			}
+
+			
+		}
+	</script>
+	<input type="text" name="value" id="num"><br>
+<button type="button" id="0" onclick="calculator('0')">0</button>	
+<button type="button" id="1" onclick="calculator('1')">1</button>
+<button type="button" id="2" onclick="calculator('2')">2</button>
+<button type="button" id="3" onclick="calculator('3')">3</button>
+<button type="button" id="+" onclick="calculator('+')">+</button>
+<br>
+<button type="button" id="4" onclick="calculator('4')">4</button>
+<button type="button" id="5" onclick="calculator('5')">5</button>
+<button type="button" id="6" onclick="calculator('6')">6</button>
+<button type="button" id="-" onclick="calculator('-')">-</button>
+<br>
+<button type="button" id="7" onclick="calculator('7')">7</button>
+<button type="button" id="8" onclick="calculator('8')">8</button>
+<button type="button" id="9" onclick="calculator('9')">9</button>
+<button type="button" id="x" onclick="calculator('x')">X</button>
+<br>
+<button type="button" id="" onclick="result()">=</button>
+<input type="text" name="result" id="result">
+
+</body>
+</html>

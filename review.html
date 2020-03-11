@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Youth_Tech-Reviews</title>
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Abel|Bangers|Boogaloo|Concert+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Shojumaru&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous|Teko&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Baloo+Da|Bree+Serif&display=swap" rel="stylesheet">
+<style type="text/css">
+		body{
+			background-image: url("back1.jpg");
+			
+			background-size: 100%;
+			
+			
+            margin: 0;
+            padding: 0; 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+
+		}
+		ul{
+			list-style-type: none;
+			padding: 15px 0px 15px 0px;
+			margin: 0px;
+			background-color: black;
+			position: sticky;
+			top:0;
+			z-index: 10;
+			left:0px;
+			width: 100%;
+		}
+		li a{
+			
+			
+			padding: 15px 30px;
+			color: white;
+			
+			text-decoration: none;
+			font-family:'Abel', cursive; 	
+		}
+		li{
+			display: inline;
+
+			
+
+		}
+		li a:hover:not(.active){
+			background-color:#2B3C69;	
+			background-size: 100%;
+			text-decoration: overline;
+			
+
+		}
+		li a.active{
+			background-color: #2949AD  ;
+
+		}
+		.subhead1{
+			position: relative;
+			top: 60px;
+			left: 70px;
+			color: #0097e6;
+			font-family:'Righteous', cursive;
+			font-size: 25px;
+		}
+		.subhead2{
+			position: relative;
+			top: 900px;
+			left: 70px;
+			color: #0097e6;
+			font-size: 25px;
+			font-family: 'Righteous', cursive;
+		}
+		.content{
+			position: relative;
+			border:1px solid white;
+			width: 1200px;
+			/*height: auto;*/
+			font-size: 25px;
+			height:200px;
+			left: 70px;
+			
+			background-color: white;
+			padding: 0px;
+			
+			border-radius: 10px;
+			border-collapse: collapse;
+			
+		}
+		.content:hover{
+			  border-top-left-radius: 20px;
+              border-bottom-left-radius: 20px;
+              animation-name: example;
+              animation-duration: 0.25s;
+              border-left: 8px solid blue;
+              box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+             
+             
+
+		}
+		
+		
+		#a{
+			top: -20px;
+		}
+		#b{
+			top: 10px;
+		}
+		#c{
+			top: 40px;
+		}
+		#d{
+			top: 300px;
+		}
+		#e{
+			top: 330px;
+		}
+		table{
+			border-collapse: collapse;
+			width: 100%;
+			height: 100%;
+		}
+		.inside1{
+			width: 33.33%;
+			height: 100%;
+			font-family:'Alfa Slab One', cursive;
+
+
+		}
+		.inside1:hover{
+			color: #0652DD;
+			 box-shadow: 0 0 15px #999; 
+		}
+		.inside2{
+			height: 100%;
+			width: 33.33%;
+			font-family: 'Bree Serif', serif;	
+
+		}
+		.inside2:hover{
+			color: #0652DD;
+			 box-shadow: 0 0 15px #999; 
+		}
+		.inside3{
+			height: 100%;
+			width: 33.33%;
+			padding-top: 8px; 
+
+			
+		}
+		.inside3:hover{
+			color: #0652DD;
+			 box-shadow: 0 0 15px #999; 
+		}
+		.image1{
+			width: 100%;
+			height: 177px;
+		}
+		.modal{
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow-y: scroll;
+			background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 100px;
+            padding-left: 70px;
+
+		}
+		.modal-content{
+			position: relative;
+			height: 500px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+			background-color: white;
+			width: 1200px;
+			border:5px solid white;
+			border-radius: 10px;
+			box-shadow: 0 0 100px #999;
+
+
+		}
+		.close{
+			float: right;
+			color: #aaa;
+			font-size: 28px;
+			font-weight: bold;
+		}
+		.video{
+			position: absolute;
+			left: 750px;
+			top: 150px;
+
+		}
+		.heading{
+			font-size: 50px;
+			font-family: 'Alfa Slab One', cursive;
+			border: 1px solid blue;
+			border-radius: 5px;
+			background-color: black;
+			color: white;
+	
+			
+		}
+		.review{
+			border:5px solid white;
+			position: relative;
+			left: 10px;
+			width: 700px;
+			font-size: 25px;
+			font-family: 'Bree Serif', serif;
+			border:2px solid white;
+			border-radius: 10px;
+			background-color: white;
+			color: black;
+		}
+		.dropdown{
+			position: relative;
+			display: inline-block;
+        }
+        .dropdown-content{
+        	display: none;
+        	position: absolute;
+        	background-color: #003366;
+        	min-width: 100px;
+        	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        	z-index: 1;
+        	border: 1px solid white;
+        	border-radius: 10px;
+        }
+        .dropdown-content a{
+        	color: white;
+        	padding: 10px;
+        	display: block;
+        	text-decoration: none;
+        	text-align: center;
+        	font-family:'Abel', sans-serif;
+
+        	/*background-color: #003366;*/
+
+        }
+        .dropdown-content a:hover{
+        	color: #66ffff;
+        	text-decoration: underline;
+        	box-shadow: 0px 0px 15px #999;
+
+        }
+        .dropdown:hover .dropdown-content{
+        	display: block;
+        }
+</style>
+</head>
+<body>
+
+
+<ul>
+			
+			<li><a href="./youthtech_gmproject.html">HOME</a></li>
+			<div class="dropdown">
+			<li><a href="./1st_page.html">NEWS</a></li>
+			<div class="dropdown-content">
+				<a href="1st_page.html#dailyfeed">DAILY FEED</a>
+				<a href="1st_page.html#trending">TRENDING</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<li><a class="active" href="./review.html">REVIEWS</a></li>
+			<div class="dropdown-content">
+				<a href="#smartphones">SMARTPHONES</a>
+				<a href="#laptops">LAPTOPS</a>
+			</div>
+		</div>
+			<li><a href="./about.html">ABOUT</a></li>
+		</ul>
+
+	<div class="subhead1">
+		<h1 id="smartphones"><u>Smartphones:</u></h1>
+	</div>
+	<div class="subhead2">
+		<h1 id="laptops"><u>Laptops:</u></h1>
+	</div>
+	<div class="content" id="a">
+		<table border="1">
+			<tr>
+				<td class="inside1" onclick="open_modal1()">
+					
+				One Plus 7 Pro review:an absolute beast in everyway
+
+			
+		
+	</td>
+
+				<td class="inside2" onclick="open_modal1()">The OnePlus 7 Pro is the firm’s largest, most expensive and most premium phone yet. While not that...</td>
+				<td class="inside3" onclick="open_modal1()"><img class="image1" src="one_reviews.jpg"></td>
+			</tr>
+		</table>
+		
+	</div>
+	<div class="content" id="b">
+		<table border="1">
+			<tr>
+				<td class="inside1" onclick="open_modal2()">SAMSUNG GALAXY S10 PLUS REVIEW: A PREMIUM 2019 FLAGSHIP WITH A FEW COMPROMISES</td>
+				<td class="inside2" onclick="open_modal2()">This year, those expectations were sky high, partly thanks to all those leaks about folding smartphones floating...</td>
+				<td class="inside3" onclick="open_modal2()"><img class="image1" src="s10_reviews.jpg"></td>
+			</tr>
+		</table>
+		
+	</div>
+	<div class="content" id="c">
+		<table border="1">
+			<tr>
+				<td class="inside1" onclick="open_modal3()">iPhone XS Max review :Apple's biggest, priciest iPhone ever</td>
+				<td class="inside2" onclick="open_modal3()">Apple finally delivers an iPhone with a huge screen, and for movie-watching, game-playing fans the iPhone XS Max is a...</td>
+				<td class="inside3" onclick="open_modal3()"><img class="image1" src="iphone_review.jpg"></td>
+			</tr>
+		</table>
+		
+	</div>
+	<div class="content" id="d">
+		<table border="1">
+			<tr>
+				<td class="inside1" onclick="open_modal4()">Dell XPS 13 (2019) Review</td>
+				<td class="inside2" onclick="open_modal4()">Dell just made one of the best laptops even better. Loaded up with Intel's powerful 8th-Gen core processor..</td>
+				<td class="inside3" onclick="open_modal4()"><img class="image1" src="dell_reviews.jpg"></td>
+			</tr>
+		</table>
+		
+	</div>
+	<div class="content" id="e">
+		<table border="1">
+			<tr>
+				<td class="inside1" onclick="open_modal5()">Lenovo Yoga C930 Review</td>
+				<td class="inside2" onclick="open_modal5()">Last year's Lenovo Yoga 920 impressed us with its classy hinge, excellent display and long battery life...</td>
+				<td class="inside3" onclick="open_modal5()"><img class="image1" src="lenovo_reviews.webp"></td>
+			</tr>
+		</table>
+		
+	</div>
+	<!--modal content-->
+	<div class="modal" id="mymodal1">
+					<div class="modal-content w3-animate-top" >
+						<span class="close" onclick="close_modal1()">&times;</span>
+						<div class="heading">
+							OnePlus 7 Pro review: an absolute beast in every way
+						</div>
+						<div class="review">
+							The OnePlus 7 Pro is the firm’s largest, most expensive and most premium phone yet. While not that cheap, it still undercuts the competition by some margin, while offering sheer speed and a stunning notchless display that even its most expensive rivals can’t touch.
+
+Starting at £649, the OnePlus 7 Pro is £150 more expensive than last year’s 6T or its 2019 refresh the 7 (non-Pro). It’s also significantly bigger.
+
+The 6.67in QHD+ AMOLED screen is absolutely massive and runs at a refresh rate of 90Hz, meaning the screen updates 90 times per second – which is 50% faster than most phones and a first for an OLED screen. The difference is immediately noticeable, even simply scrolling in apps, web pages and between home screens. You quickly get used to it, of course, until you try to go back to a 60Hz phone.
+						</div>
+							<div class="video">
+								<iframe width="400" height="200" src="https://www.youtube.com/embed/PVWLD3064Ng"></iframe>
+							</div>
+						
+
+						</div>
+					</div>
+				</div>
+				<div class="modal" id="mymodal2">
+					<div class="modal-content" >
+						<span class="close" onclick="close_modal2()">&times;</span>
+						<div class="heading">
+							SAMSUNG GALAXY S10 PLUS REVIEW: A PREMIUM 2019 FLAGSHIP WITH A FEW COMPROMISES
+						</div>
+						<div class="review">
+							I have been reviewing Samsung’s flagship smartphones here at tech2 since the Galaxy S8. While the design of Samsung’s flagship smartphone has largely remained the same, the expectations have grown year on year.
+
+This year, those expectations were sky high, partly thanks to all those leaks about folding smartphones floating about on the internet months before launch.
+
+Before Samsung announced its new S series flagships, it wowed audiences with an ultra-premium folding flagship device called the Galaxy Fold. Jaws dropped and minutes later we were shown the S Series line-up, that kind of looked like your regular Android flagship, which was kind of a downer.
+						</div>
+							<div class="video">
+								<iframe width="400" height="300" src="https://www.youtube.com/embed/Lg8B4aTZf7o"></iframe>
+							</div>
+						
+
+						</div>
+					</div>
+				</div><div class="modal" id="mymodal3">
+					<div class="modal-content" >
+						<span class="close" onclick="close_modal3()">&times;</span>
+						<div class="heading">
+							iPhone XS Max review:
+Apple's biggest, priciest iPhone ever
+						</div>
+						<div class="review">
+							While the iPhone XS Max does feel a little chunky in the hand there's no questioning the fact that you're getting a huge amount of display real estate crammed into a form factor which does a good job of keeping it usable.
+
+The steel frame around the outside and the new formulation of glass on the front and rear – which is tougher than the glass on the iPhone X – give the iPhone XS Max a supremely premium look and feel, while its resistance to dust and water has also been enhanced.
+
+Apple has upped the protection to IP68, enabling the iPhone XS Max to be submerged to a depth of up to two meters for 30 minutes without suffering any ill effects. Apple claims it's tested the protection in a number of liquids, including salt water, chlorinated water, milk, wine and beer, although we wouldn't advise purposefully exposing the handset to any of these.
+
+It's worth noting that Apple's warranty, like those of all phone manufacturers, doesn't cover 'liquid contact' damage, which means if the liquid resistance does fail on the iPhone XS Max you won't be covered.
+						</div>
+							<div class="video">
+								<iframe width="400" height="200" src="https://www.youtube.com/embed/YAF9BWpzwvI"></iframe>
+							</div>
+						
+
+						</div>
+					</div>
+				</div><div class="modal" id="mymodal4">
+					<div class="modal-content" >
+						<span class="close" onclick="close_modal4()">&times;</span>
+						<div class="heading">
+							Dell XPS 13 (2019) Review:
+						</div>
+						<div class="review">
+							Dell just made one of the best laptops even better. Loaded up with Intel's powerful 8th-Gen core processor, the XPS 13 (starting at $899, reviewed at $2,449) is even faster and more powerful than ever. Plus, Dell finally got rid of the nosecam. However, the combination of a 4K display and a power-hungry CPU puts the battery life at just under 8 hours, which can be a detriment to mobile professionals. If you need more endurance, we recommend the 1080p model, which endured for more than 12 hours on our battery test. Regarding design and performance, the XPS 13 remains among the best in its class.
+						</div>
+							<div class="video">
+								<iframe width="400" height="300" src="https://www.youtube.com/embed/DFjKYBa6ZqU"></iframe>
+							</div>
+						
+
+						</div>
+					</div>
+				</div><div class="modal" id="mymodal5">
+					<div class="modal-content" >
+						<span class="close" onclick="close_modal5()">&times;</span>
+						<div class="heading">
+							
+Lenovo Yoga C930 Review
+						</div>
+						<div class="review">
+							Last year's Lenovo Yoga 920 impressed us with its classy hinge, excellent display and long battery life, which is why I had high hopes for its successor, the Yoga C930. I can happily report the new convertible laptop doesn't disappoint. Apart from having upgraded components, the C930 does away with its predecessor's watchband hinge and replaces it with a more functional soundbar. The Yoga C930's utilitarian design also has a built-in slot for the included stylus and a webcam cover for added privacy.
+
+Those additions already make the C930 a more intriguing device than its predecessor. Add lengthy battery life and a sleek design, and the C930 is undoubtedly one of the best 2-in-1 laptops around.Another Yoga, another special hinge. This year, it's substance over style. Gone is the swanky metal watchband, and in its place is a practical "soundbar" speaker. The Yoga C930 may not be as gorgeous as its mechanical forebear, but what it loses in beauty it recoups in functionality.
+
+	
+						</div>
+							<div class="video">
+								<iframe width="400" height="300" src="https://www.youtube.com/embed/Tpmgl6susYs"></iframe>
+							</div>
+						
+
+						</div>
+					</div>
+				</div>
+
+
+
+		
+		<script type="text/javascript">
+			function open_modal1(argument) {
+				// body...
+				document.getElementById('mymodal1').style.display="block";
+			}
+			function open_modal2(argument) {
+				// body...
+				document.getElementById('mymodal2').style.display="block";
+			}
+			function open_modal3(argument) {
+				// body...
+				document.getElementById('mymodal3').style.display="block";
+			}
+			function open_modal4(argument) {
+				// body...
+				document.getElementById('mymodal4').style.display="block";
+			}
+			function open_modal5(argument) {
+				// body...
+				document.getElementById('mymodal5').style.display="block";
+			}
+			function close_modal1(argument) {
+				// body...
+				document.getElementById('mymodal1').style.display="none";
+			}
+			function close_modal2(argument) {
+				// body...
+				document.getElementById('mymodal2').style.display="none";
+			}
+			function close_modal3(argument) {
+				// body...
+				document.getElementById('mymodal3').style.display="none";
+			}
+			function close_modal4(argument) {
+				// body...
+				document.getElementById('mymodal4').style.display="none";
+			}
+			function close_modal5(argument) {
+				// body...
+				document.getElementById('mymodal5').style.display="none";
+			}
+		</script>
+
+</body>
+</html>

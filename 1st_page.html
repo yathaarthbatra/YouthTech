@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Shojumaru&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous|Teko&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
+	<title>Youth_tech</title>
+	<style type="text/css">
+		body{
+			background-image: url("back1.jpg");
+			background-size: cover;
+
+		    height: 100%;
+			
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			margin: 0px;
+			padding: 0px;
+			
+
+		}
+
+		ul{
+			list-style-type: none;
+			padding: 15px 0px 15px 0px;
+			margin: 0px;
+			background-color: black;
+			position:sticky;
+			top: 0;	
+            left: 0px;
+            z-index: 10;
+            width: 100%;
+			}
+
+		li a{	padding: 15px 30px;
+			color: white;
+			text-decoration: none;
+			font-family:'Abel', sans-serif; 
+			}
+		li{
+		
+			display: inline;}
+
+		li a:hover:not(.active){
+			background-color:#2B3C69    ;
+			background-size: 100%;
+			text-decoration: overline;
+			}
+		li a.active{
+			background-color: #2949AD  ;
+}
+
+		.content{
+			position: relative;
+			border:1px solid white;
+			width: 1200px;
+			/*height: auto;*/
+			font-size: 25px;
+			height:220;
+			right:35px;
+			background-color: white;
+			padding: 0px;
+			
+			border-radius: 10px;
+			border-collapse: collapse;
+			
+		}
+			.content:hover{
+			  border-top-left-radius: 20px;
+              border-bottom-left-radius: 20px;
+              animation-name: example;
+              animation-duration: 0.25s;
+              border-left: 8px solid blue;
+              box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+              
+
+			 box-shadow: 0 0 100px #999; 
+
+		}
+		.table{
+			
+			
+		}
+		.image1{
+			/*image taking the relative sizing according to the table*/
+			float: right;
+			width: 300px;
+			height: auto;
+			}
+		.inside1{
+			
+			
+			color: black; 
+			width: 1000px;
+			font-family: 'Passion One', cursive;
+			padding-left: 10px;
+			padding-right: 10px;
+			
+		}
+		.inside2{	
+			
+			border-radius: 10px;
+			border:1px solid white;
+		}
+		
+
+		#a{
+
+			top: 0px;
+			left: 60px;
+		}
+		#b{	
+			top: 30px;
+			left: 60px;
+		}
+		#c{
+			top: 60px;
+			left: 60px;
+		}
+		#d{
+			top: 300px;
+			left: 60px;
+		}
+		#e{
+			top: 330px;
+			left: 60px;
+		}
+		#f{
+			top: 360px;
+			left: 60px;
+		}
+		#g{
+			top: 390px;
+			left: 60px;
+		}
+		.subhead1{
+			position: relative;
+			top: 60px;
+			left: 70px;
+			color: #0097e6;
+			font-family:'Righteous', cursive;
+			font-size: 25px;
+		}
+		.subhead2{
+			position: relative;
+			top: 900px;
+			left: 70px;
+			color: #0097e6;
+			font-size: 25px;
+			font-family: 'Righteous', cursive;
+		}
+
+		.dropdown{
+			position: relative;
+			display: inline-block;
+        }
+        .dropdown-content{
+        	display: none;
+        	position: absolute;
+        	background-color: #273c75;
+        	min-width: 100px;
+        	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        	z-index: 1;
+        	border: 1px solid white;
+        	border-radius: 10px;
+        }
+        .dropdown-content a{
+        	color: white;
+        	padding: 10px;
+        	display: block;
+        	text-decoration: none;
+        	text-align: center;
+        	font-family:'Abel', sans-serif;
+
+        	/*background-color: #003366;*/
+
+        }
+        .dropdown-content a:hover{
+        	color: #66ffff;
+        	text-decoration: underline;
+        	box-shadow: 0px 0px 15px #999;
+
+        }
+        .dropdown:hover .dropdown-content{
+        	display: block;
+        }
+
+
+		
+	</style>
+</head>
+<body>
+
+		<ul>
+			<li><a href="./youthtech_gmproject.html">HOME</a></li>
+			<!--to set drop sown for news-->
+			<div class="dropdown">
+			<li><a class="active" href="./1st_page.html">NEWS</a></li>
+			<div class="dropdown-content">
+				<a href="#dailyfeed">DAILY FEED</a>
+				<a href="#trending">TRENDING</a>
+			</div>
+		</div>
+		<!--to set dropdown for reviews-->
+		    <div class="dropdown">
+			<li><a href="./review.html">REVIEWS</a></li>
+			<div class="dropdown-content">
+				<a href="review.html#smartphones">SMARTPHONES</a>
+				<a href="review.html#laptops">LAPTOPS</a>
+			</div>
+		</div>
+			<li><a href="./about.html">ABOUT</a></li>
+		</ul>
+		
+	
+
+
+
+
+	<div class="subhead1">
+		<h1 id="dailyfeed"><u>Daily Feed:</u></h1>
+	</div>
+	<div class="subhead2">
+		<h1 id="trending"><u>Trending:</u></h1>
+	</div>
+	
+		
+		<div class="content" id="a">
+			<table class="table">
+				<tr>
+					<td class="inside1">The U.S. government earlier this month offered some relief to Huawei by granting a temporary general export license for 90 days, which allows companies such as Google  to continue to provide critical support to the Chinese company for three months.
+
+</td>
+					<td class="inside2"><img class="image1" src="huawei.jpg" alt="image"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="content" id="b">
+			<table class="table">
+				<tr>
+					<td class="inside1">Tesla’s big bet on China-based production is key to a new effort to lure Chinese consumers with cheaper prices. Today the U.S. firm revealed that its incoming Model 3, which will be produced in China, will sell from 328,000 RMB — that’s around $47,500, and some 13% cheaper than its previous entry-level option.</td>
+					<td class="inside2"><img class="image1" src="tesla.jpeg" alt="image"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="content" id="c">
+			<table class="table">
+				<tr>
+					<td class="inside1">Amazon  just announced that it’s acquiring Sizmek’s ad serving and dynamic content optimization businesses.The company added that the Sizmek products will be operated separately from Amazon Advertising “for the time being.”
+
+While Amazon’s ad revenue is tiny compared to its e-commerce business, it’s expanding quickly — the company’s “other” revenue, which is mostly advertising, grew 34% to $2.7 billion in its most recent quarter.</td>
+					<td class="inside2"><img class="image1" src="amazon.jpg" alt="image"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="content" id="d">
+			<table class="table">
+				<tr>
+					<td class="inside1"> OnePlus 7 Pro only if you have the money to spare as you won’t really be missing the wide-angle and zoom cameras and that 90 Hz display, unless you have used one. To top it off they are not all that great at Rs 48,999 either.If you are not sure whether to go for either OnePlus 7 or OnePlus 7 pro, do wait for our upcoming Asus Zenfone 6 and Oppo Reno (Rs 39,999) reviews to be out to see how all these phones compared.
+			</td>
+					<td class="inside2"><img class="image1" src="oneplus.jpg" alt="image"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="content" id="e">
+			<table class="table">
+				<tr>
+					<td class="inside1">Basically, the ASUS ZenBook Pro Duo 14 is designed for anyone who likes using a second monitor (or is tired of propping up their phone or tablet as an improvised second screen), but also wants a PC with more portability. At 2.5kg, the ZenBook Pro Duo is not the lightest laptop around, but is still reasonably lightweight considering its specs and two screens.</td>
+					<td class="inside2"><img class="image1" src="laptop.jpg" alt="image"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="content" id="f">
+			<table class="table">
+				<tr>
+					<td class="inside1">The Jabra Elite 85h offers impressive noise-canceling performance, strong sound and excellent battery life with USB-C charging. They're comfortable to wear and are loaded with convenience features, including one-button access to Google Assistant, Alexa and Siri voice assistants. It delivers best-in-class call quality with a customizable sidetone option.</td>
+					<td class="inside2"><img class="image1" src="headphones.jpg" alt="image"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="content" id="g">
+			<table class="table">
+				<tr>
+					<td class="inside1">The Galaxy S10+ Plus is now on sale. The phone costs $999 to start for 8GB of RAM and 128GB of storage. But you can also order the S10 Plus with 512GB of storage for $1,249 or get a whopping 1TB of storage and 12GB of RAM for $1,599. </td>
+					<td class="inside2"><img class="image1" src="news_1.jpg" alt="image"></td>
+				</tr>
+			</table>
+		</div>
+
+        
+	
+
+</body>
+</html>

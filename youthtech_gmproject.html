@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Abel|Bangers|Boogaloo|Concert+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Hind+Guntur&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Youth_tech</title>
+	
+		
+
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<h1 id="title"><u>Youth Tech</u></h1>
+	<div id="sublines"><u>A one place destination for the tech_info:)</u>
+	</div>
+	<form action="www.w3schools.com" method="POST" target="_self"> 
+		<!--<input class="Log_In" type="submit" name="Login" value="Log In">-->
+		
+		<button type="button" value="Log In" class="Log_In" onclick="open_login()">Log In</button>
+	</form>
+	<div class="popup-login-form" id="my-login-form">
+		<form action="https://myaccount.google.com/intro" method="POST" target="_blank">
+			<div class="Email">Username</div>
+			<input class="Email-input" type="Email" name="Email" class="input" placeholder="Email" required>
+			
+			
+			<div class="password">Password</div>
+			<input class="password-input" type="Password" name="Password" class="input" placeholder="Password" required>
+			<input type="submit" class="login-button"  value="Log In" onclick="login_successful()"></form>
+			<button type="button" class="btn-cancel" onclick="cancel_login()">Cancel</button>
+			<div class="vl"></div>
+			<div class="other-accounts">
+				Log-IN with Your Social Accounts
+			</div>
+			<div class="facebook">
+				<a href="https://www.facebook.com/" class="fa fa-facebook" >
+					
+				</a>
+				<a href="https://www.facebook.com/" style="text-decoration: none; color: white;">Facebook</a>
+			</div>
+			<div class="google">
+				<a href="https://myaccount.google.com/intro" class="fa fa-google"></a>
+				<a href="https://myaccount.google.com/intro" style="text-decoration: none; color: white;">Google</a>
+			</div>
+			<div class="twitter">
+				<a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+				<a href="https://twitter.com/login?lang=en" style="text-decoration: none;color: white;">Twitter</a>
+			</div>
+
+	
+</div>
+		<form action="https//w3schools.com" target="_self" method="POST">
+		<button type="button" class="sign-up" onclick="open_signup()">Sign-up</button>
+	</form>
+	
+	<div class="popup-login-form" id="my-signup-form">
+		<form class="form-container">
+			<div class="name">Full Name</div>
+			<input class="name-input" type="text" name="name"  placeholder="Full Name" required>
+			
+			
+			<div class="username-signup">Username</div>
+			<input class="username-input" type="email" name="email" placeholder="Username" required>
+			<div class="password-signup">Password</div>
+			<input class="password-signup-input" name="password" type="password" placeholder="Password" required>
+			<div class="password-signup-confirm">Confirm Password</div>
+			<input class="password-signup-confirm-input" name="password" type="password" placeholder="Confirm Password" required>
+			<button type="submit" class="signup-button" onclick="signup_successful()">Sign Up</button>
+			<button type="button" class="btn-signup-cancel" onclick="cancel_signup()">Cancel</button>
+			<div class="vl"></div>
+			<div class="other-accounts">
+				Sign-up with Your Social Accounts
+			</div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/" class="fa fa-facebook" >
+                    
+                </a>
+                <a href="https://www.facebook.com/" style="text-decoration: none; color: white;">Facebook</a>
+            </div>
+            <div class="google">
+                <a href="https://myaccount.google.com/intro" class="fa fa-google"></a>
+                <a href="https://myaccount.google.com/intro" style="text-decoration: none; color: white;">Google</a>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+                <a href="https://twitter.com/login?lang=en" style="text-decoration: none;color: white;">Twitter</a>
+            </div>
+			
+
+	</form>
+</div>
+
+	
+	
+	<div class="search-box">
+		<input class="search-text" type="text" name="search" placeholder="Search..">
+				<a class="search-button" href="">
+		<i class="fas fa-search"></i>
+	</a>
+	
+	</div>
+
+
+	
+		<ul>
+			<li><a class="active" href="#Home">HOME</a></li>
+			<!--to set drop sown for news-->
+			<div class="dropdown">
+			<li><a href="./1st_page.html">NEWS</a></li>
+			<div class="dropdown-content">
+				
+                <a href="1st_page.html#dailyfeed">DAILY FEED</a>
+				<a href="1st_page.html#trending">TRENDING</a>
+				
+			</div>
+		</div>
+		<!--to set dropdown for reviews-->
+		    <div class="dropdown">
+			<li><a href="./review.html">REVIEWS</a></li>
+			<div class="dropdown-content">	
+				<a href="review.html#smartphones">SMARTPHONES</a>
+				<a href="review.html#laptops">LAPTOPS</a>	
+			</div>
+		</div>
+			<li><a href="./about.html">ABOUT</a></li>
+		</ul>
+        <div class="popup-login-form" id="login-successful">
+            <h1 class="content-success">You Logged In Successfully</h1>
+            <div class="tick"><i class="fas fa-check-circle"></i></div>
+             <button type="button" class="ok" onclick="close_login_successful()">OK</button>
+            
+            
+        </div>
+        <div class="popup-login-form" id="signup-successful">
+            <div class="tick"><i class="fas fa-check-circle"></i></div>
+            <h1 class="content-success">You Signed-up Successfully</h1>
+            
+                <button type="button" class="ok" onclick="close_signup_successful()">OK</button>
+            
+            
+        </div>
+
+		
+		
+	<script type="text/javascript">
+		function open_login() {
+			// body...
+			document.getElementById('my-login-form').style.display= "block";
+		}
+		function open_signup()
+		{
+			document.getElementById('my-signup-form').style.display="block";
+		}
+		function cancel_login()
+		{
+			document.getElementById('my-login-form').style.display="none";
+		}
+		function cancel_signup() {
+			document.getElementById('my-signup-form').style.display="none";
+			// body...
+		}
+        function login_successful() {
+            document.getElementById('login-successful').style.display="block";
+            document.getElementById('my-login-form').style.display="none";
+            // body...
+        }
+        function close_login_successful() {
+            document.getElementById('login-successful').style.display="none";
+            // body...
+        }
+        function signup_successful() {
+            document.getElementById('signup-successful').style.display="block";
+            document.getElementById('my-signup-form').style.display="none";
+            // body...
+        }
+        function close_signup_successful() {
+
+            // body...
+            document.getElementById('signup-successful').style.display="none";
+        }
+	</script>
+
+</body>
+</html>

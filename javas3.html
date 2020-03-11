@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java3</title>
+	<script type="text/javascript">
+		function add() {
+			// body...
+
+			var a=document.getElementById('1st').value;
+			var b=document.getElementById('2nd').value;
+			var result=0;
+			result=parseInt(a) + parseInt(b);
+			document.getElementById('result').value=result;
+		}
+		
+	</script>
+</head>
+<body>
+	enter two no:s
+	<br>
+	<table border="1" style="border-collapse: collapse;">
+		<tr>
+			<td colspan="2"><input type="text" name="number" id="1st"></td>
+			<td colspan="2"><input type="text" name="number" id="2nd"></td>
+		</tr>
+		<tr>
+			<td><button type="button" onclick="add()">add</button></td>
+			<td><button type="button">sub</button></td>
+			<td><button type="button">mult</button></td>
+			<td><button type="button">div</button></td>
+		</tr>
+		<tr>
+			<td colspan="4"><button type="button">result</button><input type="text" name="result" id="result"></td>
+		</tr>
+		
+	</table>
+	
+
+</body>
+</html>

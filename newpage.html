@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<link rel="stylesheet" type="text/css" href="mystyle1.css">*/-->
+	<title>trial page</title>
+	<style >
+		table,th,td{
+			border-collapse: collapse;
+			border:4px solid blue;
+			padding: 15px;
+			margin-left: 100px;
+		}
+		h1.border1{
+			/*background-color:orange*/
+				border-style: solid;
+			border-top-width:30px;
+			border-radius: 5px; 
+			margin:40px;
+					}
+		h3.border{
+			border-style: solid;
+			border-top-width:30px;
+			border-radius: 5px; 
+			margin:inherit;
+			
+		}
+
+	</style>
+</head>
+<body><!-- defines the body of the webpage-->
+	<h1 style="text-align:center;" class="border1"><strong> Welcome to Cu</strong></h1>
+	<!--now we have defined a table-->
+	<h3 class="border" style="text-align: center;">Things i like</h3>
+	<ol type="A">	
+		<li>Personal development</li>
+		<li>technology</li>
+	</ol>
+	<br>
+	<h3>THings i dont like</h3>
+	<ul>
+		<li>time wastage</li>
+		<li>unorganised way of living</li>
+	</ul>
+	<br>
+	<h3>Result of my class12</h3>
+	<table>
+		<caption style="font-size: 30px;  font-family: cursive; background-color: yellow; color: blue;">Result</caption>
+		<tr>
+			<th><u>Subject</u></th>
+			<th colspan="2"><u>Marks</u></th>
+			<th colspan="2">Grade</u></th>
+		</tr>
+		<tr>
+			<td rowspan="2">maths</td><!--you have to imageine that now where the cursor is and now we have to bring it in the second line--> 
+			
+				<td>maths 1</td>
+				<td>grade 1</td>
+				<td>grade 2</td>
+				
+			<!--<td>97</td>
+			<td>A+</td>
+			<td>bacha</td>-->
+		</tr>
+		<tr>
+			<td>maths 2	</td>
+			<td>grade 3</td>
+			<td>grade 4</td>
+		</tr>
+		
+		<tr>
+			<td>chemistry</td>
+			<td>92</td>
+			<td>A+</td>
+			<td>Acha</td>
+		</tr>
+		<tr>
+			<td>Physics</td>
+			<td>95</td>
+			<td>A+</td>
+			<td>bablu</td>
+		</tr>
+		<tr>
+			<td>English</td>
+			<td>89</td>
+			<td>A</td>
+			<td>kartoos</td>
+		</tr>
+	</table>
+<!-- now we will learn about forms-->
+<h3 style="background-color: pink;">For 100% Job guarantee register for Cu</h3>
+<!--<hr style="color: transparent;">-->
+<form method="GET" target="_self">
+<table><caption style="font-size: 30px; color: red; background-color: orange;">Registration form</caption><tr>
+	
+		<th>Name:</th>
+		<td><input type="text" name="name"></td></tr>
+		<tr><th>Age:</th>
+			<td><input type="text" name="Age"></td></tr>
+
+	    <tr><th>Class 12th percentage:</th>
+	    	<td><input type="text" name="class12" placeholder="original"></td></tr>
+	    <tr>
+	    	<th rowspan="2">Gender</th>
+	    	<td>Male:<input type="radio" name="radio"></td>
+	    </tr>
+	    <tr>
+	    	<td title="Gender">Female:<input type="radio" name="radio" title="radio button"></td>
+	    </tr>
+	    <tr>
+	    	<th>Password</th>
+	    	<td><input type="Password" name="Password"></td>
+	    </tr>
+	    <tr>
+	    	<td><input type="submit" name="submit"></td>
+	    	<td><input type="reset" name="reset"></td>
+	    </tr>
+	    <tr>
+	    	<th>hobbies</th>
+	    	<td><select>
+	    		<option value="sports" disabled>sports</option>
+	    		<option value="indoor">indoor</option>
+	    		<option value="vella panti">vella panti</option>
+	    	</select></td>
+
+	    </tr>
+	    <tr>
+	    	<th>select from one of the options</th>
+	    	<td><input list="company">
+	    		<datalist id="company">
+	    			<option value="samsung"></option>
+	    			<option value="apple"></option>
+	    			<option value="vivo"></option>
+	    		</datalist></td>
+	    </tr>
+
+
+
+</table>
+
+</form>
+
+
+
+</body>
+</html>

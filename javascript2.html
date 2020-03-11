@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jav2</title>
+	<script type="text/javascript">
+		function table() {
+			// body...
+          var a=document.getElementById('table').value;
+          var i=0;
+          
+          var output="";
+          var t="";
+          for(i=1;i<=10;i++)
+          {
+            output=a + "x" + i + "=" + (a*i) + "<br>"
+            t=t+output;
+          }
+          alert(t);
+          document.getElementById('para').innerHTML=t;
+
+		}
+	</script>
+</head>
+<body>
+	Enter a no. whose table should be given
+	<input type="text" name="number" id="table">
+	<button type="button" onclick="table()">go for a ride</button>
+	<p id="para"></p>
+
+</body>
+</html>

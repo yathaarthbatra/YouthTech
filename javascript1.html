@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ja</title>
+	<script type="text/javascript">
+		function test() {
+			// body...
+			
+			document.getElementsId('tt').inner HTML="hi";
+			test1();
+		}
+		function test1()
+		{
+			
+			test();
+		}
+		function textfield()
+		{
+			var a=document.getElementById("num").value;
+			var output="odd";
+			if(a%2==0)
+				output="even";
+			alert(output);
+		}
+	</script>
+</head>
+<body>
+	<h1>My first page</h1>
+    <button type="button"   id="tt" onclick="test()">click on the button</button>
+    <button type="button" onclick="test1()">click again on the website</button>
+    <br>
+    <input type="text" name="text" id="num" >
+    <button type="button" onclick="textfield()">to check whether the no. is even or odd</button>
+</body>
+</html>
